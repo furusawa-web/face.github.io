@@ -54,6 +54,9 @@
       function (mediaStream) {
         // videoのメタデータの取得が成功
         video.addEventListener("loadedmetadata", function (event) {
+          // furusawa
+          video.srcObject = mediaStream;
+                               
           drowLog("顔検出中...");
           // videoのサイズを取得
           var videoW = video.clientWidth;
@@ -103,7 +106,7 @@
 
         // videoでWebカメラの映像を表示
         // video.src = URL.createObjectURL(mediaStream);
-        video.srcObject = mediaStream;
+        //video.srcObject = mediaStream;
       },
       function (error) {
         console.log("error", error);
