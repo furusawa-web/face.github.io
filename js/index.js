@@ -71,6 +71,8 @@
           // サイズを設定
           video.width = wireframe.width = maskCanvas.width = videoW;
           video.height = wireframe.height = maskCanvas.height = videoH;
+                               video.top = wireframe.top;
+                               video.left = wireframe.left;
 
           // マスク用canvasを配置
           document.getElementById("drawArea").appendChild(maskCanvas);
