@@ -52,8 +52,9 @@
         audio: true
       },
       function (mediaStream) {
-        // furusawa
+         // furusawa
         video.srcObject = mediaStream;
+        video.play;
                            
         // videoのメタデータの取得が成功
         video.addEventListener("loadedmetadata", function (event) {
