@@ -166,8 +166,8 @@
    */
   function clmtrackrLostHandler() {
     // Remove Event
-    document.removeEventListener("clmtrackrLost", clmtrackrLostHandler);
-    document.removeEventListener("clmtrackrConverged", clmtrackrConvergedHandler);
+    //document.removeEventListener("clmtrackrLost", clmtrackrLostHandler);
+    //document.removeEventListener("clmtrackrConverged", clmtrackrConvergedHandler);
 
     drowLog("顔検出失敗");
   }
