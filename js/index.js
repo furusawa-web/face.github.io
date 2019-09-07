@@ -133,7 +133,7 @@
 
     // マスクを適応する範囲が決まってきたかどうか
     var pn = ctrack.getConvergence();
-    if (pn < 0.4) {
+    if (pn < 1.0) {
       requestAnimationFrame(drawMaskLoop);
     } else {
       requestAnimationFrame(loop);
@@ -166,8 +166,8 @@
    */
   function clmtrackrLostHandler() {
     // Remove Event
-    //document.removeEventListener("clmtrackrLost", clmtrackrLostHandler);
-    //document.removeEventListener("clmtrackrConverged", clmtrackrConvergedHandler);
+    document.removeEventListener("clmtrackrLost", clmtrackrLostHandler);
+    document.removeEventListener("clmtrackrConverged", clmtrackrConvergedHandler);
 
     drowLog("顔検出失敗");
   }
